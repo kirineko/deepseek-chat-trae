@@ -33,7 +33,7 @@ const messagesWithSystemPrompt = [
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer sk-c1c8b7e0ec964743b6760a41ba3876be`
+        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
       body: JSON.stringify({
         model: 'deepseek-chat',
